@@ -9,10 +9,10 @@ public class Program {
 		db.put("password", "password");
 		db.put("url", "localhost");
 		
-		Properties file = Properties.getInstance();
+		readPropertiesFile file = new readPropertiesFile();
 		//file.createFile("config.properties");
 		file.writeFile("config.properties", db);
-		file.getMessage("config.properties", "user");
+		file.("config.properties", "user");
 		
 		
 		

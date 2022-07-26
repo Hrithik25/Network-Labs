@@ -1,22 +1,25 @@
 import java.io.*;
 import java.util.*;
-public class FileMaker {
-private static FileMaker instance = null;
-	
-	private FileMaker() {
+public class Properties {
+	private static Properties instance = null;
+	//private HashMap<String, String> db = new HashMap<String, String>();
+	private Properties() {
 	}
 	
-	public static FileMaker getInstance() {
+	public static Properties getInstance() {
 		if(instance == null)
-			instance = new FileMaker();
+			instance = new Properties();
 		return instance;
 	}
-	public void createFile(String name) throws Exception {
+	
+	/*public void createFile(String name) throws Exception {
 		FileWriter fw = new FileWriter(name);
 		fw.close();
-	}
+	}*/
+	
 	
 	public void writeFile(String name, HashMap<String, String> db) throws FileException {
+		//this.db = db;
 		if(db.size() > 3)
 			throw new FileException("Invalid Data");
 		else if(db.get("user") != "arisglobal")
@@ -47,12 +50,18 @@ private static FileMaker instance = null;
 		}
 	}
 	
-	public void printFile(String name) throws IOException {
-		FileReader fr;
-		fr = new FileReader(name);
-		int i;
-		while((i = fr.read()) != -1)
-			System.out.print((char)i);
-		fr.close();
+	@SuppressWarnings("unchecked")
+	public String getMessage(String name, String key) {
+		String value = "";
+		try {
+			ObjectInputStream in = new ObjectInputStream(new FileInputStream(name));
+			HashMap<String, String> db = (HashMap<String, String>)in.readObject();
+			in.close();
+			value = db.get(key);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return value;
 	}
 }
