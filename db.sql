@@ -15,7 +15,7 @@ section char(1),
 student_address text);
 
 insert into Book values
-(101, '
+(101, ''
 
 
 
