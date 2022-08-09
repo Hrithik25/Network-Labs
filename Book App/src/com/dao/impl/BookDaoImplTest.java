@@ -9,19 +9,17 @@ import com.entity.Book;
 class BookDaoImplTest {
 
 	@Test
-	void testAdd() {
-		BookDaoImpl obj = new BookDaoImpl();
-		Book book1 = new Book();
-		Book book2 = new Book(obj.getBook(111));
+	void testGetBook() {
+
+			BookDaoImpl obj = new BookDaoImpl();
+			Book book = null;
+			book = obj.getBook(111);
+			
+			System.out.println(book);
 		
-		book1.setBook_id(111);
-		book1.setBook_name("Gullivers Travels");
-		book1.setIsbn_no("VVBH426GB7");
-		book1.setPrice(250.0);
 		
-		//book2 = obj.getBook(111);
 		
-		assertEquals(book1.getPrice(), book2.getPrice());
+		//assertEquals(book1.getPrice(), book2.getPrice());
 	}
 
 	/*@Test

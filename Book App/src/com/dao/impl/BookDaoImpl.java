@@ -90,10 +90,8 @@ public class BookDaoImpl implements BookDao {
 			connection.close();
 			
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -111,11 +109,13 @@ public class BookDaoImpl implements BookDao {
 			psmt.setInt(1, book_no);
 			
 			ResultSet rs = psmt.executeQuery();
+			while(rs.next()) {
+				book.setBook_id(rs.getInt("book_id"));
+				book.setBook_name(rs.getString("book_name"));
+				book.setIsbn_no(rs.getString("isbn"));
+				book.setPrice(rs.getDouble("price"));
+			}
 			
-			book.setBook_id(rs.getInt("book_id"));
-			book.setBook_name(rs.getString("book_name"));
-			book.setIsbn_no(rs.getString("isbn"));
-			book.setPrice(rs.getDouble("price"));
 			
 			rs.close();
 			psmt.close();

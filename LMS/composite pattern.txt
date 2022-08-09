@@ -1,0 +1,69 @@
+Achalla Ramakrishna12:52 PM
+public abstract class AbstractFile {
+	private String fileName;
+	public AbstractFile(String fileName) {
+		this.fileName = fileName;
+	}
+	
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public abstract void ls();
+}
+public class File extends AbstractFile {
+	
+	
+	public File(String name) {
+		super(name);
+	}
+	public void ls() {
+		System.out.println("\t\t\tfile name - " + this.getFileName());
+	}
+}
+import java.util.ArrayList;
+import java.util.List;
+
+public class Directory extends AbstractFile {
+
+	private List<AbstractFile> afiles = new ArrayList<AbstractFile>();
+
+	public Directory(String name) {
+		super(name);
+	}
+	public void add(AbstractFile afile) {
+		afiles.add(afile);
+	}
+	public void ls() {
+		System.out.println("Directory Name  - " + this.getFileName());
+		for(AbstractFile afile : afiles) {
+			afile.ls();
+		}
+	}
+}
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		File file = new File("a.txt");
+	//	file.ls();
+		
+		Directory directory = new Directory("Parent Dir");
+		File file1 = new File("b.txt");
+		directory.add(file);
+		directory.add(file1);
+		Directory subdir = new Directory("sub dir");
+		File file2 = new File("c.txt");
+		subdir.add(file2);
+		directory.add(subdir);
+		directory.ls();
+		
+	}
+
+}
+hwz-vvqm-zyt
