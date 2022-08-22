@@ -1,0 +1,11 @@
+package com.training;
+
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+public class DeptDao {
+	NamedParameterJdbcTemplate template;  
+	  
+	public DeptDao(NamedParameterJdbcTemplate template) {  
+	        this.template = template;  
+	}
+}

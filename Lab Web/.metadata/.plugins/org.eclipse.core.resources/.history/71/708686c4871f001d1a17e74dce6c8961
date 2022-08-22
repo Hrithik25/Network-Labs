@@ -1,0 +1,6 @@
+<html>
+<body>
+<h2>Welcome to Spring MVC</h2>
+<a href="hello">Click Here...</a>
+</body>
+</html>

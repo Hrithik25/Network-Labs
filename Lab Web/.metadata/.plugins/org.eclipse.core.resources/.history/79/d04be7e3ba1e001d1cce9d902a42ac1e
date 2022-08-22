@@ -1,0 +1,39 @@
+package com.training.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.training.model.Department;
+
+@Service("departmentService")
+@Transactional
+public class DepartmentServiceImpl implements DepartmentService {
+
+	public void saveDepartment(Department department) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public List<Department> findAllDepartments() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void deleteDepartmentById(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Department findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void updateDepartment(Department department) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

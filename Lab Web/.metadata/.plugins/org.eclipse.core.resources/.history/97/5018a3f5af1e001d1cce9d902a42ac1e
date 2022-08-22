@@ -1,0 +1,49 @@
+package com.training.model;
+
+public class Department {
+	private int id;
+	private int dept_name;
+	private int location;
+	
+	public Department() {
+		
+	}
+
+	public Department(int id, int dept_name, int location) {
+		super();
+		this.id = id;
+		this.dept_name = dept_name;
+		this.location = location;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getDept_name() {
+		return dept_name;
+	}
+
+	public void setDept_name(int dept_name) {
+		this.dept_name = dept_name;
+	}
+
+	public int getLocation() {
+		return location;
+	}
+
+	public void setLocation(int location) {
+		this.location = location;
+	}
+
+	@Override
+	public String toString() {
+		return "Department [id=" + id + ", dept_name=" + dept_name + ", location=" + location + "]";
+	}
+	
+	
+}

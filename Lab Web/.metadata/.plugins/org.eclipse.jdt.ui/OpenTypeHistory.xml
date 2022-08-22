@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Builder/src&lt;{Beverage.java[Beverage" modifiers="513" timestamp="1659503086064"/>
+    <typeInfo handle="=Builder/src&lt;{Builder.java[Builder" modifiers="513" timestamp="1659504100158"/>
+    <typeInfo handle="=ServiceLayer/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1659943913777"/>
+    <typeInfo handle="=Annotation/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1659958268123"/>
+    <typeInfo handle="=Annotation/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1659957803704"/>
+    <typeInfo handle="=SpringHibernate/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.training.dao{DepartmentDao.java[DepartmentDao" modifiers="513" timestamp="1660798967203"/>
+    <typeInfo handle="=SpringHibernate/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.training.service{DepartmentService.java[DepartmentService" modifiers="513" timestamp="1660802038685"/>
+</typeInfoHistroy>

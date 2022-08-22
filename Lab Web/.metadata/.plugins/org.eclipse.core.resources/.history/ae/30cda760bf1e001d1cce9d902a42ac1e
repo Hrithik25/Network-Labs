@@ -1,0 +1,24 @@
+package com.training;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.training.model.Department;
+import com.training.service.DepartmentService;
+
+public class Program {
+
+	public static void main(String[] args) {
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("applicationContext.xml");
+		DepartmentService departmentService = (DepartmentService) context.getBean("departmentService");
+		
+		Department department = new Department();
+		department.setDept_id(108);
+		department.setDept_name("Employee Relation");
+		department.setDept_location("Mumbai");
+		
+		departmentService.saveDepartment(department);
+	}
+
+}

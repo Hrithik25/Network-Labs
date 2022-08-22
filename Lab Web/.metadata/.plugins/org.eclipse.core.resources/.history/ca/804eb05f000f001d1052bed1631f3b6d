@@ -1,0 +1,5 @@
+package com.myServlet;
+
+public class HelloSevlet {
+
+}

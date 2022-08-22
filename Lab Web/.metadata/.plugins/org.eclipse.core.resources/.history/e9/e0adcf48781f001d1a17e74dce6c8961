@@ -1,0 +1,5 @@
+package com.arisglobal.dao;
+
+public abstract class AbstractDao {
+
+}

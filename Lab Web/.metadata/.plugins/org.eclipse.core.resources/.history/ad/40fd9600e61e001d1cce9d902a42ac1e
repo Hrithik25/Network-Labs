@@ -1,0 +1,24 @@
+package com.arisglobal.model;
+
+import javax.persistence.*;
+
+public class Asset {
+	@Id
+	private int asset_id;
+	@Column(name = "asset_name")
+	private String asset_name;
+	@Column(name = "isbn_no")
+    private int isbn_no ;
+	@Column(name = "price")
+    private String price;
+	@Column(name = "category_id")
+    private int category_id;
+	@Column(name = "author_id")
+    private String author_id;
+	@Column(name = "created_date")
+    private Date created_date;
+	@Column(name = "asset_type")
+    private String asset_type;
+	@Column(name = "number_copies")
+    private int number_copies; 
+}

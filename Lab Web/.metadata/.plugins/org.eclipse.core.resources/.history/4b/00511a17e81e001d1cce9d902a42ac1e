@@ -1,0 +1,17 @@
+package com.arisglobal.model;
+
+import java.sql.Date;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="asset")
+public class Author {
+
+	@Id
+    private int id;
+	@Column(name="author_name")
+	private String author_name;
+	 private Date date;
+	
+}

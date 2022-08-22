@@ -1,0 +1,28 @@
+package com.arisglobal.model;
+
+import java.sql.Date;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="lms_transaction")
+public class Transaction {
+	@Id
+	private int id;
+	@Column(name="asset_id")
+	private int asset_id;
+	@Column(name="issue_date")
+	private Date issue_date;
+	@Column(name="due_date")
+	private Date due_date;
+	@Column(name="return_date")
+	private Date return_date;
+	@Column(name="created_date")
+	private Date created_date;
+	@Column(name="transaction_status")
+	private int transaction_status;
+	@Column(name="lms_user_id")
+	private int lms_user_id;
+	@Column(name="due_value")
+	private double due_value;
+}

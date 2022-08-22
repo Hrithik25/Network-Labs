@@ -1,0 +1,15 @@
+package com.arisglobal.model;
+
+import javax.persistence.*;
+import java.sql.Date;
+
+@Entity
+@Table(name="category")
+public class Category {
+	@Id
+	private int id;
+	@Column(name="category_name")
+	private String category_name;
+	@Column(name="created_date")
+	private Date created_Date;
+}

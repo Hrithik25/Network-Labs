@@ -1,0 +1,11 @@
+to: abc@gmail.com
+sub: Request for Leave / Leave Request
+
+Dear Deepak,
+This is to inform you that I have a family function to attend from 5th September to 10th September. 
+I request you to grant me leave for six days.
+
+Thanks and Regards,
+Hrithik Anand
+Associate Software Engineer
+ArisGlobal

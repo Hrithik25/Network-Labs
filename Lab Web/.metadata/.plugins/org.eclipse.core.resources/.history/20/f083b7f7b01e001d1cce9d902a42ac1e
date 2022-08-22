@@ -1,0 +1,51 @@
+package com.training.model;
+
+public class Department {
+	private int dept_id;
+	private int dept_name;
+	private int dept_location;
+	
+	public Department() {
+		
+	}
+
+	public Department(int dept_id, int dept_name, int dept_location) {
+		super();
+		this.dept_id = dept_id;
+		this.dept_name = dept_name;
+		this.dept_location = dept_location;
+	}
+
+	public int getDept_id() {
+		return dept_id;
+	}
+
+	public void setDept_id(int dept_id) {
+		this.dept_id = dept_id;
+	}
+
+	public int getDept_name() {
+		return dept_name;
+	}
+
+	public void setDept_name(int dept_name) {
+		this.dept_name = dept_name;
+	}
+
+	public int getDept_location() {
+		return dept_location;
+	}
+
+	public void setDept_location(int dept_location) {
+		this.dept_location = dept_location;
+	}
+
+	@Override
+	public String toString() {
+		return "Department [dept_id=" + dept_id + ", dept_name=" + dept_name + ", dept_location=" + dept_location + "]";
+	}
+
+	
+	
+	
+}

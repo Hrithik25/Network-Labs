@@ -1,0 +1,10 @@
+package com.arisglobal.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="asset")
+public class Role {
+	private int id;
+	private String name;
+}
